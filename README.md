@@ -8,8 +8,7 @@
 
 * **📘 Kaggle Notebook:**
   [https://www.kaggle.com/code/abydanielvarghese/scentmatch-ai-your-personal-perfume-recommender](https://www.kaggle.com/code/abydanielvarghese/scentmatch-ai-your-personal-perfume-recommender)
-* **🎥 Demo Video:** *()*
-  `https://youtu.be/your-demo-video`
+* **🎥 Demo Video:** *(https://drive.google.com/file/d/1mTsPiGsLvM7zjGpsKCqkYSOb63MwKQHK/view?usp=drive_web)*
 * **🏆 Kaggle Competition Writeup:**
   *(https://www.kaggle.com/competitions/agents-intensive-capstone-project/writeups/scentmatch-ai-intelligent-perfume-recommendation)*
 
