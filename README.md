@@ -1,4 +1,4 @@
-# 🌸 ScentMatch AI — Your Personal Perfume Concierge
+# 🌸 ScentMatch AI - Your Personal Perfume Concierge
 
 **An ADK-powered intelligent agent that recommends perfumes, finds dupes, and gives usage tips based on vibe, climate, and budget.**
 
