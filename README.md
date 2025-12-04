@@ -1,95 +1,102 @@
 # 🌸 ScentMatch AI — Your Personal Perfume Concierge
 
-**An ADK-powered intelligent agent that recommends perfumes, finds affordable dupes, and gives usage tips based on your vibe, climate, and budget.**
+**An ADK-powered intelligent agent that recommends perfumes, finds dupes, and gives usage tips based on vibe, climate, and budget.**
 
 ---
 
 ## 🔗 Quick Links
 
-* **📘 Kaggle Notebook:**
-  [https://www.kaggle.com/code/abydanielvarghese/scentmatch-ai-your-personal-perfume-recommender](https://www.kaggle.com/code/abydanielvarghese/scentmatch-ai-your-personal-perfume-recommender)
-* **🎥 Demo Video:** *(https://drive.google.com/file/d/1mTsPiGsLvM7zjGpsKCqkYSOb63MwKQHK/view?usp=drive_web)*
-* **🏆 Kaggle Competition Writeup:**
-  *(https://www.kaggle.com/competitions/agents-intensive-capstone-project/writeups/scentmatch-ai-intelligent-perfume-recommendation)*
+**📘 Kaggle Notebook:**
+[https://www.kaggle.com/code/abydanielvarghese/scentmatch-ai-your-personal-perfume-recommender](https://www.kaggle.com/code/abydanielvarghese/scentmatch-ai-your-personal-perfume-recommender)
+
+**🎥 Demo Video:**
+*Google Drive link (https://drive.google.com/file/d/1mTsPiGsLvM7zjGpsKCqkYSOb63MwKQHK/view)*
+
+**🏆 Kaggle Competition Submission:**
+[https://www.kaggle.com/competitions/agents-intensive-capstone-project/writeups/scentmatch-ai-intelligent-perfume-recommendation](https://www.kaggle.com/competitions/agents-intensive-capstone-project/writeups/scentmatch-ai-intelligent-perfume-recommendation)
 
 ---
 
 ## 🚀 Overview
 
-Buying fragrances is confusing — performance changes with weather, notes are hard to understand, and prices vary wildly.
+Perfume shopping is confusing — hundreds of fragrances, changing performance, and overpriced designers.
 
-**ScentMatch AI** makes fragrance discovery simple by acting as your **AI-powered scent advisor**, helping you pick the perfect perfume instantly.
+**ScentMatch AI solves this.**
+
+It acts as your **AI-powered fragrance advisor**, helping you instantly discover the perfect scent based on:
+
+* Climate (hot, humid, cold, winter)
+* Vibe (fresh, woody, sweet, masculine/feminine)
+* Occasion (university, party, gym, date night)
+* Budget (affordable → luxury)
+* Extra needs like longevity or projection
+
+The agent also suggests **dupes** for expensive perfumes and gives **spray tips** & usage guidance.
 
 ---
 
 ## ✨ Features
 
-### 🔍 Personalized Recommendations
+### 🔍 Intelligent Recommendations
 
-Get perfume suggestions tailored to:
+Understands your profile and picks scents that match your:
 
-* Hot / cold / humid climate
-* Vibe (fresh, woody, sweet, masculine, feminine)
-* Budget (affordable → ultra luxury)
-* Use case (university, office, date night, gym)
+* Weather
+* Season
+* Gender
+* Usage scenario
+* Budget
+* Preferred vibe
 
-### 🪞 Dupe Finder
+---
 
-Finds **affordable dupes** for expensive designer/niche fragrances.
+### 🪞 **Dupe Finder Tool**
 
-### 💡 Usage Guide
+Get **cheaper alternatives** to designer and niche fragrances.
+E.g., recommends Club de Nuit Intense Man instead of Creed Aventus.
 
-Practical tips such as:
+---
+
+### 💡 **Usage Guide Tool**
+
+Gives actionable advice:
 
 * Correct spray count
-* Longevity expectations
-* Where to apply
-* When it performs best
+* Longevity + projection expectation
+* Works best in which season
+* Where to apply on the body
 
 ---
 
 ## 🧠 System Architecture
 
-**Main Components**
+### Core Components
 
-* **ChatCompletionAgent** — handles conversation & logic
-* **Tools**
+* **ChatCompletionAgent** → main brain that handles conversation
+* **Tools:**
 
-  * *preference_input* — gathers and interprets user inputs
-  * *dupe_finder_tool* — recommends cheaper similar scents
-  * *usage_guide_tool* — provides spray tips + performance insights
+  * `preference_input` → interprets user preferences
+  * `dupe_finder_tool` → suggests affordable alternatives
+  * `usage_guide_tool` → spray & performance guidance
 
-**ADK Workflow**
+### ADK Flow
 
-1. User expresses perfume preference
+1. User asks for a fragrance
 2. Tools run in parallel
-3. ADK merges tool outputs into a final clean recommendation
+3. ADK merges tool outputs
+4. Produces a final structured + clean recommendation
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠 Technologies Used
 
-| Technology              | Purpose                        |
-| ----------------------- | ------------------------------ |
-| **OpenAI ADK (Agents)** | Core intelligence              |
-| **Python**              | Development                    |
-| **Jupyter Notebook**    | Demo and evaluation            |
-| **Structured Outputs**  | Clean user-friendly formatting |
-| **JSON Tools**          | For modular agent actions      |
-
----
-
-## 🎥 Demo
-
-The Kaggle Notebook walks through:
-
-* Collecting fragrance preferences
-* Running all 3 tools
-* Producing recommendations + dupes + usage tips
-* Outputting structured JSON and final clean text
-
-👉 **Notebook Link again for quick access:**
-[https://www.kaggle.com/code/abydanielvarghese/scentmatch-ai-your-personal-perfume-recommender](https://www.kaggle.com/code/abydanielvarghese/scentmatch-ai-your-personal-perfume-recommender)
+| Tech                          | Purpose                             |
+| ----------------------------- | ----------------------------------- |
+| **OpenAI ADK**                | Multi-tool agent structure          |
+| **Python**                    | Development                         |
+| **Jupyter Notebook (Kaggle)** | Demo, evaluation                    |
+| **Structured Outputs**        | Clean JSON formatting               |
+| **Tool Calling**              | Modular dupe & usage tool execution |
 
 ---
 
@@ -99,26 +106,62 @@ The Kaggle Notebook walks through:
 ScentMatch-AI/
 │── scentmatch-ai-your-personal-perfume-recommender.ipynb
 │── README.md
-│── /assets (images or diagrams)
-│── /images  (optional visuals)
+│── /assets          # (optional) images, banners
+│── /images          # (optional) visuals
 ```
 
 ---
 
-## 🔮 If I Had More Time
+## 📀 How to Use (Kaggle Notebook)
 
-* Add a small UI or web app using Streamlit
-* Integrate a large perfume dataset (Fragrantica-like)
-* Scent similarity search using embeddings
+1. Open the Kaggle notebook.
+2. Add your OpenAI API key in the sidebar → “Secrets”.
+3. Run all cells.
+4. Interact with ScentMatch AI using:
+
+   ```
+   await run_session(runner, "Your question here", session_name="live-chat")
+   ```
+5. Ask natural questions like:
+
+   * “Suggest a daily fragrance for hot climate.”
+   * “Give me cheaper alternatives to Dior Sauvage.”
+   * “What’s good for a winter party date night?”
+
+---
+
+## 🧪 Example Sessions
+
+### **1. Hot-climate daily fragrance**
+
+“I'm a guy in a hot climate, budget level cheap designer, want fresh + clean vibe.”
+→ Recommends **Nautica Voyage** or **Mont Blanc Explorer**
+
+### **2. Cheaper alternatives to Creed Aventus**
+
+→ Suggests **Armaf CDNIM**, **Mont Blanc Explorer**, etc.
+
+### **3. Winter date night scent**
+
+→ Suggests **Lattafa Asad**, **CDNIM**, etc.
+
+---
+
+## 🧭 Future Improvements
+
+If developed into a full consumer product, the agent can be extended with:
+
+* Web UI (Streamlit / Next.js)
+* Large fragrance dataset (Fragrantica-style)
+* Embedding-based similarity search
+* User fragrance wardrobe tracking
 * Multi-language support
-* Personalized “fragrance wardrobe builder”
+* API endpoint for mobile apps
 
 ---
 
 ## 👤 Author
 
 **Aby Daniel Varghese**
-Built with ❤️ using OpenAI ADK.
-
----
+Built with ❤️ during the **5-Day OpenAI × Kaggle Agents Intensive**.
 
