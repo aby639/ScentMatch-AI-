@@ -1,8 +1,3 @@
-
-
----
-
-````markdown
 # 🌸 ScentMatch AI – Your Personal Perfume Concierge
 
 An ADK-powered intelligent agent that recommends perfumes, finds dupes, and gives usage tips based on **vibe, climate, occasion, and budget**.
@@ -264,4 +259,3 @@ If this becomes a full product, next steps could be:
 **Aby Daniel Varghese**
 Built during the **5-Day OpenAI × Kaggle Agents Intensive**, later upgraded with a full web UI using Streamlit + Google ADK.
 
-If you want, after you deploy, send me the public Streamlit link and I’ll help you craft a nice 1–2 line **portfolio description + LinkedIn post** for it.
